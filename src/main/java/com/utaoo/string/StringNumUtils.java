@@ -16,7 +16,7 @@ public class StringNumUtils {
      * @return number in string
      */
     public static String getNumber(String str) {
-        String res = "";
+        String res = null;
         if (StringUtils.isNotBlank(str)) {
             str = str.trim();
             Pattern p = Pattern.compile("\\d{1}");
