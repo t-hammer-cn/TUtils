@@ -27,4 +27,20 @@ public class StringNumUtils {
         }
         return res;
     }
+
+    /**
+     * count char from string
+     * @param ori ori char
+     * @param target target char
+     * @return count
+     */
+    public static int getCount(String ori, String target) {
+        int i = 0;
+        Pattern p = Pattern.compile(target);
+        Matcher m = p.matcher(ori);
+        while (m.find()) {
+            i++;
+        }
+        return i;
+    }
 }
